@@ -28,6 +28,25 @@
             <label><input type="radio" name="sexe" value="F" required> F</label>
             <label><input type="radio" name="sexe" value="M"> M</label></br>
         </div>
+
+        <!-- Matière -->
+        <label for="matiere">Matière :</label>
+        <select id="matiere" name="matiere" required>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="DevOps">DevOps</option>
+            <option value="Developement web">Developement web</option>
+            <option value="Cloud">Cloud</option>
+        </select></br>
+
+        <!-- Note -->
+        <label for="note">Note :</label>
+        <input type="number" id="note" name="note" min="0" max="20" required></br>
+
+        <!-- Bouton de soumission -->
+        <div class="button-group">
+            <button type="submit">Valider</button>
+            <button type="reset">Réinitialiser</button>
+        </div>
     </form>
 	<a href="results.html">Clique pour voir la page de prédiction</a>
 </body>
