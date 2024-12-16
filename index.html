@@ -10,6 +10,25 @@
 </head>
 <body>
     <h2>Fiche de collecte des notes des l'étudiants</h2>
+    <form action="#" method="post">
+        <!-- Nom de l'étudiant -->
+        <label for="nom">Nom de l'étudiant :</label>
+        <input type="text" id="nom" name="nom" required></br>
+
+        <!-- Date de naissance -->
+        <div class="input-group">
+			<label for="date_naissance">Date de naissance :</label>
+            <input type="text" id="date_naissance" name="date_naissance" placeholder="jj/mm/aaaa" required pattern="\d{2}/\d{2}/\d{4}">
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+
+        <!-- Sexe -->
+        <div class="radio-group">
+            <label>Sexe :</label>
+            <label><input type="radio" name="sexe" value="F" required> F</label>
+            <label><input type="radio" name="sexe" value="M"> M</label></br>
+        </div>
+    </form>
 	<a href="results.html">Clique pour voir la page de prédiction</a>
 </body>
 </html>
